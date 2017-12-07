@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danni.domiventas.Register2Activity"
+    android:orientation="vertical"
+    android:background="@drawable/fondodown">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+    <EditText
+        android:id="@+id/eNombreNegocio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/recuadro"
+        android:drawableLeft="@drawable/ic_store_black_24dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nombre Negocio"
+        android:inputType="textVisiblePassword"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/eNombrePropietario"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/recuadro"
+        android:inputType="textVisiblePassword"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nombre Administrador"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/eDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textVisiblePassword"
+        android:background="@drawable/recuadro"
+        android:drawableLeft="@drawable/ic_my_location_black_24dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Direccion"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/eNumeroCelular"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/recuadro"
+        android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Numero Celular"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textSize="20sp" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sTipoTienda"
+        android:layout_gravity="center"></Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/bContinue"
+            android:onClick="bContinue"
+            android:text="Continue"
+            android:textColor="@color/primary_text"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/botonlogin"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:shadowColor="#564982"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+</LinearLayout>

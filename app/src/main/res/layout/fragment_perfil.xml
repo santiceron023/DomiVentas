@@ -1,0 +1,495 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.danni.domiventas.PerfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/fondodown">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/lyVistaPerfil"
+            android:layout_margin="10dp"
+            android:background="@drawable/recuadro">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/logocircular"
+                android:layout_gravity="center_horizontal"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#89ff93"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Nombre: "
+                    android:textStyle="bold"
+                    android:textColor="@color/icons"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:id="@+id/tNombre"
+                    android:text="Tiendibiris"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:textSize="18dp"
+                    android:text="Propietario:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:id="@+id/tPropietario"
+                    android:text="Tiendibiris"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Tipo: "
+                    android:textStyle="bold"
+                    android:textColor="@color/icons"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:id="@+id/tTipo"
+                    android:text="Tiendibiris"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Celular:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:id="@+id/tCelular"
+                    android:text="Tiendibiris"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Dirección:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:id="@+id/tDireccion"
+                    android:text="Tiendibiris"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Email:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:id="@+id/tEmail"
+                    android:text="Tiendibiris"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:textSize="18dp"
+                    android:text="Costo Envio:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/tCostoEnvio"
+                    android:text="Tiendibiris"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Pedido minimo:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:id="@+id/tPedidoMin"
+                    android:text="Tiendibiris"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:textSize="18dp"
+                    android:text="Tiempo de Envio:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:id="@+id/tTiempo"
+                    android:text="Tiendibiris"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:id="@+id/bEditar"
+                android:layout_gravity="center"
+                android:text="Editar Perfil"
+                android:textStyle="bold"
+                android:textColor="@color/icons"
+                android:background="@drawable/botonlogin" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.8"></LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/lyVistaEditar"
+            android:layout_margin="10dp"
+            android:background="@drawable/recuadro">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/logocircular"
+                android:layout_gravity="center_horizontal"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#89ff93"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Nombre: "
+                    android:textStyle="bold"
+                    android:textColor="@color/icons"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:id="@+id/eNombre"
+                    android:hint="Nombre de la Tienda"
+                    android:textSize="18dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:textSize="18dp"
+                    android:text="Propietario:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:id="@+id/ePropietario"
+                    android:hint="Propietario"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Tipo: "
+                    android:textStyle="bold"
+                    android:textColor="@color/icons"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:id="@+id/eTipo"
+                    android:hint="Tipo de negocio"
+                    android:textSize="18dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Dirección:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:id="@+id/eDireccion"
+                    android:hint="Dirección de la tienda"
+                    android:textSize="18dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:textSize="18dp"
+                    android:text="Costo Envio:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/eCostoEnvio"
+                    android:hint="Costo de Envio"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Pedido minimo:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:id="@+id/ePedidoMin"
+                    android:hint="Pedido minimo"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:textSize="18dp"
+                    android:text="Tiempo de Envio:"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:id="@+id/eTiempo"
+                    android:text="Tiendibiris"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:id="@+id/bEditar2"
+                android:layout_gravity="center"
+                android:text="Editar"
+                android:textStyle="bold"
+                android:textColor="@color/icons"
+                android:background="@drawable/botonlogin"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.8"></LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

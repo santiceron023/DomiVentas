@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danni.domiventas.AgregarProductoActivity"
+    android:orientation="vertical"
+    android:background="@drawable/fondo">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:text=" NUEVO PRODUCTO"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+    <ImageView
+        android:id="@+id/imagenProducto"
+        android:onClick="addImagen"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/recuadro2"
+        android:src="@drawable/ic_image_black_24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="12dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Nombre Producto: "
+            android:gravity="center_vertical"
+            android:textColor="@color/white"/>
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/eNombreProducto"
+            android:inputType="textVisiblePassword"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="Nombre producto"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/naranjitch"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="12dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Marca : "
+            android:gravity="center_vertical"
+            android:textColor="@color/white"/>
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/eMarca"
+            android:layout_height="match_parent"
+            android:inputType="textVisiblePassword"
+            android:layout_weight="2"
+            android:hint="Marca"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/naranjitch"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="12dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tamaño/Cantidad : "
+            android:gravity="center_vertical"
+            android:textColor="@color/white"/>
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/eCantidad"
+            android:layout_height="match_parent"
+            android:inputType="textVisiblePassword"
+            android:layout_weight="2"
+            android:hint="Tamaño o cantidad"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/naranjitch"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="12dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Precio : "
+            android:gravity="center_vertical"
+            android:textColor="@color/white"/>
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/ePrecio"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="Precio del producto"
+            android:inputType="textVisiblePassword"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/naranjitch"/>
+    </LinearLayout>
+    <Button
+        android:onClick="addProducto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="25dp"
+        android:text="Agregar Producto"
+        android:textSize="18dp"
+        android:textColor="@color/icons"
+        android:background="@drawable/botonlogin"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>
